@@ -27,7 +27,7 @@ if (isset($_POST['signup'])) {
     $query->execute();
     $lastInsertId = $dbh->lastInsertId();
     if ($lastInsertId) {
-        echo '<script>alert("Your Registration successfull and your student id is  "+"' . $StudentId . '")</script>';
+        echo '<script>alert("Your Registration successfull and your student id is  "+"' . $StudentId . '"); window.location.href = "index.php";</script>';
     } else {
         echo "<script>alert('Something went wrong. Please try again');</script>";
     }
@@ -61,7 +61,9 @@ if (isset($_POST['signup'])) {
                 document.signup.confirmpassword.focus();
                 return false;
             }
-            return true;
+            else {
+                return true;
+            }
         }
     </script>
     <script>

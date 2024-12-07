@@ -36,8 +36,6 @@
                     <div class="navbar-collapse collapse ">
                         <ul id="menu-top" class="nav navbar-nav navbar-right">
                             <li><a href="dashboard.php">DASHBOARD</a></li>
-
-
                             <li>
                                 <a href="#" class="dropdown-toggle" id="ddlmenuItem" data-toggle="dropdown"> Account <i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown-menu" role="menu" aria-labelledby="ddlmenuItem">
@@ -50,29 +48,8 @@
                         </ul>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 <?php } else { ?>
-    <section class="menu-section">
-        <div class="container">
-            <div class="row ">
-                <div class="col-md-12">
-                    <div class="navbar-collapse collapse ">
-                        <ul id="menu-top" class="nav navbar-nav navbar-right">
-
-                            <li><a href="adminlogin.php">Admin Login</a></li>
-                            <li><a href="signup.php">User Signup</a></li>
-                            <li><a href="index.php">User Login</a></li>
-
-
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
 <?php } ?>
